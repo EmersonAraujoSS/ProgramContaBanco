@@ -33,18 +33,25 @@ public class Luta {
 
             Random aleatorio = new Random();
             int vencedor = aleatorio.nextInt(3); //ele vai gerar 3 resultados 0, 1, 2,
+            System.out.println("======= RESULTADO DA LUTA =======");
             switch (vencedor){  //switch:  estrutura de escolha
                 case 0:  //Empate
-
+                    System.out.println("Empatou");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
                     break;
                 case 1:  //Desafiado vence
-
+                    System.out.println("Vitoria do " + this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
                     break;
                 case 2:  //Desafiante vence
-
+                    System.out.println("Vitoria do " + this.desafiante.getNome());
+                    this.desafiante.ganharLuta();
+                    this.desafiado.perderLuta();
                     break;
             }
-
+            System.out.println("===============================");
         }else {
             System.out.println("A luta não pode acontecer!");
         }
