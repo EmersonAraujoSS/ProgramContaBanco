@@ -1,0 +1,32 @@
+RESUMO DAS AULAS SOBRE HERANÇA:
+
+
+
+HERANÇA: permite basear uma nova classe na definição de uma outra classe previamente existente.
+Será aplicada tanto para as características quanto para os comportamentos.
+
+
+RAIZ: uma classe que não possui superclasses (mãe).
+
+
+FOLHA: uma classe que não possui subclasses (filhas).
+
+DESCENDENTE: A teve um filho AC e AC teve um filho ACA. A é ancestral de ACA.  A NÃO É ANCESTRAL DE AC
+Ascendente: ACA é descendente de A. AC NÃO É DESCENDENTE DE A
+
+
+ESPECIALIZAÇÃO: percorrer a árvore de cima pra baixo.
+GENERALIZAÇÃO: percorrer a árvore de baixo pra cima.
+
+
+HERANÇA DE IMPLEMENTAÇÃO (HERANÇA POBRE): Apenas herda os atributos e os métodos da classe mãe, sem implementar mais nenhum.
+HERANÇA PARA DIFERENÇA: Herda os atributos e os métodos da classe mãe, implementando outros métodos dela própria.
+
+CLASSE ABSTRATA: não pode ser instanciada. Só pode servir como progenitora. (Não pode gerar objetos)
+MÉTODO ABSTRATO: declarado, mas não implementado na progenitora. (Interfaces)
+
+CLASSE FINAL: não pode ser herdada por outra classe. É obrigatoriamente folha. (Não pode ter filhos)
+MÉTODO FINAL: não pode ser sobrescrito pelas suas sub-classes. É obrigatoriamente herdado. (Não pode gerar uma especialização)
+
+
+SOBREPOR: fazer a mesma coisa de formas diferentes (@Override).
